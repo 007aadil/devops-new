@@ -8,7 +8,6 @@ jobs:
 build:
 runs-on: ubuntu-latest
 
-```
 steps:
 
 - name: Checkout Code
@@ -26,4 +25,4 @@ steps:
   run: |
     docker push ${{ secrets.DOCKER_USERNAME }}/devops-app:${{ github.sha }}
     docker push ${{ secrets.DOCKER_USERNAME }}/devops-app:latest
-```
+
